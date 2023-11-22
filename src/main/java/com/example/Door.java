@@ -1,5 +1,6 @@
 package com.example;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class Door {
@@ -7,12 +8,12 @@ private int id;
 private String material;
 private double height;
 private double width;
-private LocalDate date;
+private Date date;
 
 
 
 
-public Door(int id, String material, double height, double width,LocalDate date) {
+public Door(int id, String material, double height, double width,Date date) {
     this.id = id;
     this.material=material;
     this.height=height;
@@ -47,10 +48,10 @@ public double getWidth() {
 public void setWidth(double width) {
 	this.width = width;
 }
-public LocalDate getDate() {
+public Date getDate() {
 	return date;
 }
-public void setDate(LocalDate date) {
+public void setDate(Date date) {
 	this.date = date;
 }
 

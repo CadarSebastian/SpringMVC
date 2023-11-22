@@ -14,7 +14,7 @@
 
     <servlet-mapping>
         <servlet-name>door</servlet-name>
-        <url-pattern>/doors/{id}</url-pattern>
+        <url-pattern>/doors</url-pattern>
     </servlet-mapping>
 
 </web-app>

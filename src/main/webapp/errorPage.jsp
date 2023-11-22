@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
- We currently do not have such type of door in stock
+ We currently do not have of doors in stock
 </body>
 </html>

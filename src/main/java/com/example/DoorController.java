@@ -12,13 +12,13 @@ import org.springframework.web.servlet.ModelAndView;
 public class DoorController {
     DoorDao watchDao=new DoorDao();// daca o sa avem mai multe metode sa nu initializam de atatea ori
 
-    @GetMapping("/doors/{id}")
+    @GetMapping("/doors")
     public ModelAndView watchPageById(@PathVariable int id) throws SQLException, IOException {
 
-        ModelAndView mav=new ModelAndView("single-door");//the name of the jsp
+        ModelAndView mav=new ModelAndView("DoorTable");//the name of the jsp
 
         //get the watch from db
-        Door door=DoorDao.getById(id);
+        Door door=DoorDao.getAll();
 
         mav.addObject("door",door);
         System.out.println(door.getId());
